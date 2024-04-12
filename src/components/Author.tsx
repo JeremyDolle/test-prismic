@@ -19,11 +19,15 @@ const Author = async ({field}: Props) => {
 
   return (
     <div className="relative mt-8 flex items-center gap-x-4">
-      <PrismicNextImage
-        field={doc.data.avatar}
-        alt=""
-        className="h-10 w-10 rounded-full bg-gray-50"
-      />
+      {
+        prismic.isFilled.image(doc.data.avatar) && (
+          <PrismicNextImage
+            field={doc.data.avatar}
+            alt=""
+            className="h-10 w-10 rounded-full bg-gray-50"
+          />
+        )
+      }
       <div className="text-sm">
         <p className="font-semibold text-white">{doc.data.name}</p>
       </div>
