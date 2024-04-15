@@ -21,7 +21,7 @@ const Hero = ({ slice }: HeroProps) => {
               field={slice.primary.title}
               components={{
                 heading1: ({ children }) => <h1 className="mb-4 text-5xl font-extrabold text-white">{children}</h1>,
-                heading2: ({ children }) => <h1 className="mb-4 text-4xl font-extrabold text-white">{children}</h1>,
+                heading2: ({ children }) => <h2 className="mb-4 text-4xl font-extrabold text-white">{children}</h2>,
               }}
             />
           )

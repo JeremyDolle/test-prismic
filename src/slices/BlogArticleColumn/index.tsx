@@ -13,7 +13,7 @@ export type BlogArticleColumnProps =
  */
 const BlogArticleColumn = ({ slice }: BlogArticleColumnProps): JSX.Element => {
   return (
-    <div className="py-24 sm:py-32 bg-gray-900">
+    <section className="py-24 sm:py-32 bg-gray-900">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           {
@@ -57,7 +57,7 @@ const BlogArticleColumn = ({ slice }: BlogArticleColumnProps): JSX.Element => {
           }
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

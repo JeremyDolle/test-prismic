@@ -25,7 +25,7 @@ const ArticleCard = async ({field}: Props) => {
         {
           prismic.isFilled.richText(doc.data.title) && (
             <PrismicRichText field={doc.data.title} components={{
-              heading1: ({children}) => <h2 className="mt-3 text-lg font-semibold leading-6 text-white hover:text-gray-600 line-clamp-1">{children}</h2>
+              heading1: ({children}) => <h3 className="mt-3 text-lg font-semibold leading-6 text-white hover:text-gray-600 line-clamp-1">{children}</h3>
             }}/>
           )
         }
